@@ -390,6 +390,14 @@ footer {
   color: #fff;
 }
 
+.footer__email {
+  margin-bottom: 12px;
+}
+.footer__email .footer__link {
+  color: #fff;
+  font-weight: 500;
+}
+
 .footer__list {
   margin: 20px 0 24px 0;
 }
