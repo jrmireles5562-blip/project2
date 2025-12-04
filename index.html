@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Library — an online platform to discover and buy featured books.">
+  <title>Library — Updated</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <img class="logo" src="data:image/jpeg;base64,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" alt="Library logo">
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Contact</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+        </ul>
+        <button aria-label="Open menu" class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop" role="dialog" aria-modal="true">
+          <button aria-label="Close menu" class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header__container">
+        <div class="header__description">
+          <h1>America's most awarded online library platform</h1>
+          <h2>Find your dream book with <span class="purple">Library</span></h2>
+          <a href="#features">
+            <button class="btn">Browse books</button>
+          </a>
+        </div>
+        <figure class="header__img--wrapper">
+          <img src="./assets/Undraw_Books.svg" alt="Illustration of books">
+        </figure>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="highlights">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Why choose <span class="purple">Library</span>
+          </h2>
+          <div class="highlight__wrapper">
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Easy and Quick
+              </h3>
+              <p class="highlight__para">
+                Get access to the book you purchased online instantly.
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-book-open" aria-hidden="true"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                10,000+ Books
+              </h3>
+              <p class="highlight__para">
+                Library has books in all your favourite categories.
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__img">
+                <i class="fas fa-tags" aria-hidden="true"></i>
+              </div>
+              <h3 class="highlight__subtitle">
+                Affordable
+              </h3>
+              <p class="highlight__para">
+                Get your hands on popular books for as little as $10.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Featured <span class="purple">Books</span>
+          </h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/crack the coding interview.png" alt="Crack the Coding Interview cover">
+              </figure>
+              <div class="book__title">
+                Crack the Coding Interview
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/atomic habits.jpg" alt="Atomic Habits cover">
+              </figure>
+              <div class="book__title">
+                Atomic Habits
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/david goggins.jpeg" alt="Can't Hurt Me cover">
+              </figure>
+              <div class="book__title">
+                Can't Hurt Me
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/deep work.jpeg" alt="Deep Work cover">
+              </figure>
+              <div class="book__title">
+                Deep Work
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recent">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            Featured <span class="purple">Books</span>
+          </h2>
+          <div class="books">
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-1.jpeg" alt="The 10X Rule cover">
+              </figure>
+              <div class="book__title">
+                The 10X Rule
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-2.jpeg" alt="Be Obsessed Or Be Average cover">
+              </figure>
+              <div class="book__title">
+                Be Obsessed Or Be Average
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-3.jpeg" alt="Rich Dad Poor Dad cover">
+              </figure>
+              <div class="book__title">
+                Rich Dad Poor Dad
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-4.jpeg" alt="Cashflow Quadrant cover">
+              </figure>
+              <div class="book__title">
+                Cashflow Quadrant
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-5.jpeg" alt="48 Laws of Power cover">
+              </figure>
+              <div class="book__title">
+                48 Laws of Power
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-6.jpeg" alt="The 5 Second Rule cover">
+              </figure>
+              <div class="book__title">
+                The 5 Second Rule
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-7.jpg" alt="Your Next Five Moves cover">
+              </figure>
+              <div class="book__title">
+                Your Next Five Moves
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure class="book__img--wrapper">
+                <img class="book__img" src="./assets/book-8.jpeg" alt="Mastery cover">
+              </figure>
+              <div class="book__title">
+                Mastery
+              </div>
+              <div class="book__ratings" aria-hidden="true">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore">
+      <div class="container">
+        <div class="row row__column">
+          <h2>Explore more <span class="purple">Books</span></h2>
+          <a href="#features">
+            <button class="btn">Browse books</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="./assets/Library.svg" class="footer__logo--img" alt="Library logo">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="#" class="footer__link">Home</a>
+          <a class="footer__link no-cursor">About</a>
+          <a href="#features" class="footer__link">Books</a>
+          <a class="footer__link no-cursor">Contact</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2021 Library</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Small inline script to handle the menu for the copy file -->
+  <script>
+    function openMenu() {
+      const nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.add('menu--open');
+      }
+    }
+    function closeMenu() {
+      const nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.remove('menu--open');
+      }
+    }
+    // Close menu when clicking outside (.menu__backdrop)
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('nav') && document.querySelector('nav.menu--open')) {
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+
+</html>
